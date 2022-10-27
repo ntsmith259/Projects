@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="476.0" prefWidth="592.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ReportObjects.AppointmentReportController">
+    <children>
+        <Label fx:id="AppointmentLabel" alignment="TOP_CENTER" layoutX="-28.0" layoutY="37.0" prefHeight="69.0" prefWidth="583.0" text="Appointments by Type and Month">
+            <font>
+                <Font size="24.0" />
+            </font></Label>
+        <Button layoutX="197.0" layoutY="403.0" onAction="#onActionMainMenu" prefHeight="52.0" prefWidth="150.0" text="Back">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+        <TableView fx:id="ApptTableView" layoutX="33.0" layoutY="94.0" prefHeight="295.0" prefWidth="534.0">
+            <columns>
+                <TableColumn fx:id="typeCol" minWidth="6.0" prefWidth="190.0" text="Appointment Type" />
+            <TableColumn fx:id="yearCol" minWidth="6.0" prefWidth="66.0" text="Year" />
+                <TableColumn fx:id="monthCol" minWidth="6.0" prefWidth="92.0" text="Month" />
+                <TableColumn fx:id="totalCol" minWidth="6.0" prefWidth="185.0" text="Total Appointments" />
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>
